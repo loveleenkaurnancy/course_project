@@ -19,7 +19,7 @@ class ProductManager extends StatefulWidget {
 }
 
 class _ProductManagerState extends State<ProductManager> {
-  List<String> _products = const [];
+  List<String> _products = [];
 
   @override
     void initState() {
@@ -35,9 +35,10 @@ class _ProductManagerState extends State<ProductManager> {
       }
 
     void _addProduct(String product){
-      setState(() {
+      // setState(() {
             _products.add(product);
-          });
+          // });
+          print(_products);
     }
 
   @override
